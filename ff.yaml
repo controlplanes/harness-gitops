@@ -15,10 +15,6 @@ featureFlags:
           value: "true"
         - identifier: "false"
           value: "false"
-      prerequisites:
-      - flagIdentifier: mv1
-        variations:
-        - v1
       environments:
       - identifier: dev
         default:
