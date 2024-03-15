@@ -30,6 +30,21 @@ featureFlags:
           onVariation: v1
           offVariation: v2
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            distribution:
+              bucketBy: identifier
+              variations:
+              - weight: 50
+                variation: v1
+              - weight: 50
+                variation: v2
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - testtg
   - flag:
       name: test1
       identifier: test1
