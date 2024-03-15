@@ -15,6 +15,10 @@ featureFlags:
           value: '{"version":"v1"}'
         - identifier: v2
           value: '{"version":"v1"}'
+      prerequisites:
+      - flagIdentifier: test1
+        variations:
+        - "true"
       environments:
       - identifier: dev
         default:
