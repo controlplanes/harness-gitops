@@ -1,6 +1,32 @@
 featureFlags:
   flags:
   - flag:
+      name: mv1
+      identifier: mv1
+      description: hohoho
+      permanent: true
+      spec:
+        type: json
+        default:
+          onVariation: v1
+          offVariation: v2
+        variations:
+        - identifier: v1
+          value: '{"version":"v1"}'
+        - identifier: v2
+          value: '{"version":"v1"}'
+      environments:
+      - identifier: dev
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+      - identifier: c4
+        default:
+          onVariation: v1
+          offVariation: v2
+        state: "off"
+  - flag:
       name: test1
       identifier: test1
       description: ""
