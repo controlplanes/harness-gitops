@@ -56,7 +56,7 @@ featureFlags:
         default:
           onVariation: v1
           offVariation: v2
-        state: "off"
+        state: "on"
       - identifier: c4
         default:
           onVariation: v1
